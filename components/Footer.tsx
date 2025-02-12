@@ -71,7 +71,9 @@ export const Footer = () => {
                         <ul className="flex flex-col">
                             <li className="[&_a]:last:mb-0">
                                 {column.links.map((link)=>(
-                                    <Link key={link.title} className="text-gray mb-3 block last:mb-0" href={link.href}>{link.title}</Link>
+                                    <Link key={link.title} 
+                                    className="text-gray mb-3 block last:mb-0 hover:text-offWhite transition-colors duration-200" 
+                                    href={link.href}>{link.title}</Link>
                                 ))}
                             </li>
                         </ul>

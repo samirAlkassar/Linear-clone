@@ -1,4 +1,3 @@
-import { Container } from "../components/Container";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import "../styles/globals.css";
@@ -15,7 +14,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <div>
             <Header />
-            <main className="pt-[var(--navigation-hieght)]">
+            <main className="pt-[var(--navigation-hieght)] bg-page-gradiant">
                 {children}
             </main>
             <Footer />
